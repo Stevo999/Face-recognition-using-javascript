@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="webcam"></div>
+        <div class="grid-item" id="grayscale"></div>
+        <div class="grid-item" id="snapshot-btn">
+            <button id="snapshot">Take Screenshot</button>
+        </div>
+        <div class="grid-item" id="red-channel"></div>
+        <div class="grid-item" id="green-channel"></div>
+        <div class="grid-item" id="blue-channel"></div>
+
+        <div class="grid-item" id="threshold-image-1">
+            <div id="red-channel-1"></div>
+            <input type="range" id="red-intensity" min="0" max="255" value="10">
+        </div>
+        <div class="grid-item" id="threshold-image-2">
+            <div id="green-channel-1"></div>
+            <input type="range" id="green-intensity" min="0" max="255" value="10">
+        </div>
+        <div class="grid-item" id="threshold-image-3">
+            <div id="blue-channel-1"></div>
+            <input type="range" id="blue-intensity" min="0" max="255" value="10">
+        </div>
+        
+        
+        <div class="grid-item" id="webcam-repeat"></div>
+        <div class="grid-item" id="color-space-1"></div>
+        <div class="grid-item" id="color-space-2"></div>
+
+        <div class="grid-item" id="face-detection"></div>
+        <div class="grid-item" id="threshold-cs1">
+            <div id="color-space-1-1"></div>
+            <input type="range" id="color-space-1-intensity" min="0" max="255" value="10">
+        </div>
+        <div class="grid-item" id="threshold-cs2">
+            <div id="color-space-2-1"></div>
+            <input type="range" id="color-space-2-intensity" min="0" max="255" value="10">
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
